@@ -1,0 +1,11 @@
+Seeding: Completed running in 5095.56946 seconds
+Page to load: ∞
+Add Indexes:
+  add_index(:sequences, :assembly_id)
+    -> 7.1009s
+  add_index(:genes, :sequence_id)
+    -> 27.3595s
+  add_index(:hits, :subject_id)
+    -> 49.3589s
+Second Index page load attempt: 1.8minutes
+Percent Improvement: Not as much as I'd hoped.
