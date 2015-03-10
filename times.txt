@@ -5,7 +5,11 @@ Add Indexes:
     -> 7.1009s
   add_index(:genes, :sequence_id)
     -> 27.3595s
-  add_index(:hits, :subject_id)
-    -> 49.3589s
+  add_index(:hits, [:subject_id, :subject_type])
+   -> 61.3447s
 Second Index page load attempt: 1.8minutes
 Percent Improvement: Not as much as I'd hoped.
+3rd Index page load: 1.1minutes
+add_index(:assemblies, :name)
+   -> 0.1337s
+4th Index page load (after adding name index): 1.6minutes :/
