@@ -9,10 +9,10 @@
 now = Time.now
 today = Date.today
 
-assembly_count = 100
-sequence_count = 10000
-gene_count = 50000
-hit_count = 500000
+assembly_count = 50
+sequence_count = 5000
+gene_count = 25000
+hit_count = 250000
 
 puts_interval = 100
 

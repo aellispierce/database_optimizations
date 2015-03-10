@@ -22,7 +22,9 @@ I was given an existing application which generates a report from a large data s
 * 4th Index page load (after adding name index): 1.6minutes :/
 * Second Seed: Completed running in 21812.635078 seconds
 * Size of database (in bytes).
+    * 572829696
 * Size of development log.
+    * 1471760480
 * One example method for reducing the size of database yet keeping data intact:
   * Data compression can help reduce the size of your database. Columns that compress well are:
     * Columns with numeric or fixed-length character data types where most values don’t require all the allocated bytes: For example, integers where most values are less than 1000

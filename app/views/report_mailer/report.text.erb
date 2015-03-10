@@ -1,0 +1,12 @@
+
+<% @hits.each do |h| %>
+  Matching Gene Name
+  <%= h.match_gene_name %>
+
+  Matching DNA
+  <%= h.match_gene_dna.first(100) %>
+
+  Percent Similarity
+  <%= h.percent_similarity %>
+
+<% end %>

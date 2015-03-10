@@ -13,3 +13,12 @@ Percent Improvement: Not as much as I'd hoped.
 add_index(:assemblies, :name)
    -> 0.1337s
 4th Index page load (after adding name index): 1.6minutes :/
+Record the size of your database (in bytes).
+Record the size of your development log.
+Give at least one method (feel free to Google) for reducing the size of one of these, yet keeping your data intact.
+  * Data compression can help reduce the size of your database. Columns that compress well are:
+    * Columns with numeric or fixed-length character data types where most values don’t require all the allocated bytes: For example, integers where most values are less than 1000
+    * Nullable columns where a significant number of the rows have a NULL value for the column
+    * Significant amounts of repeating data values or repeating prefix values in the data
+Do you think that this is smaller, about right, or larger than the size of databases you'll be working with in your career?
+  * Probably about right to smaller.
