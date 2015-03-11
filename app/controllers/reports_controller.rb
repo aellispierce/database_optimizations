@@ -5,6 +5,6 @@ class ReportsController < ApplicationController
 
   def send_email
      SendEmailJob.perform_later(params[:email], params[:assembly][:name])
-     redirect_to root_path
+     redirect_to root_path, notice: "Email sent!"
   end
 end
